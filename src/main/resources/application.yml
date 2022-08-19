@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    username: root
+#    服务器
+#    url: jdbc:mysql://124.222.173.117:3306/mychart?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&useSSL=false
+#    password: Liulz1228llz!
+
+#    本地
+    url: jdbc:mysql://:3306/mychart?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT&useSSL=false
+    password: llz1228
+
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson:
+    #指定日期格式，比如yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
+    #指定日期格式化时区
+    time-zone: GMT+8
+
+#  mybatis:
+#  //扫描xml路径
+#  mapper-locations: classpath:com/example/springboot/*Mapper.xml
+#  //扫描接口路径  SpringBootApplication中@MapperScan("com.example.springboot.**.mapper")  /*指定Mybatis映射接口的包名*/
+#  type-aliases-package: com.example.springboot.emp.mapper
+#  mapper-locations: classpath:com/example/springboot/**/mapper/*Mapper.xml
+#  type-aliases-package: classpath:com.example.springboot.**.mapper
+
